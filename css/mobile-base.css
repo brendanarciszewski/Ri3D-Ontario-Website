@@ -9,13 +9,13 @@
 
 html {
     font: 15px 'Source Sans Pro', sans-serif;
-    --main-background-colour: #3BB03B;
+    --main-background-colour: #d7b8f1;
     --main-margin: 0 2.5vw 2.5vw 2.5vw;
     --module-padding: 0.75rem;
-    --module-background-colour: #FFB100;
-    --module-dark-background-colour: #E09C00;
-    --link-colour: #0041C7;
-    --link-visited-colour: #0034A1;
+    --module-background-colour: #ab69e3;
+    --module-dark-background-colour: #9d59d7;
+    --link-colour: #f0ddab;
+    --link-visited-colour: #d7b8f1;
     --menu-item-background-colour: #999;
     --menu-item-hover-background-colour: #666;
     --menu-font-colour: #111;
