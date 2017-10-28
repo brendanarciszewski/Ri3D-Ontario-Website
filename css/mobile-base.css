@@ -8,31 +8,30 @@
  * ----------------------------------------------- */
 
 html {
-    font: 15px 'Source Sans Pro', sans-serif;
-    --main-background-colour: #d7b8f1;
-    --main-margin: 0 2.5vw 2.5vw 2.5vw;
-    --module-padding: 0.75rem;
-    --module-background-colour: #ab69e3;
-    --module-dark-background-colour: #9d59d7;
+    font: 18px 'Source Sans Pro', sans-serif;
+    --mdl-padding: 0.75rem;
+    --mdl-bg-colour-one: #c076ff;
+    --mdl-bg-colour-two: #b36eee;
     --link-colour: #f0ddab;
     --link-visited-colour: #d7b8f1;
-    --menu-item-background-colour: #999;
-    --menu-item-hover-background-colour: #666;
     --menu-font-colour: #111;
 }
 
-p,
 blockquote,
 figure {
     margin: 0;
     padding: 0;
 }
+p {
+    margin:0;
+    padding:0.05em 0 .15em;
+}
 
 h1 {font-size: 1.75rem;}
 
-h2 {font-size: 1.55rem;}
+h2 {font-size: 1.55rem; color: #151515;}
 
-h3 {font-size: 1.35rem;}
+h3 {font-size: 1.35rem; color: #252525;}
 
 h4 {font-size: 1.25rem;}
 
@@ -85,8 +84,8 @@ a:hover {
  * ----------------------------------------------- */
 
 body {
-    background: var(--main-background-colour);
-    margin: var(--main-margin);
+    background: #d7b8f1;
+    margin: 0 2.5vw 2.5vw 2.5vw;
     font-size: 1rem;
     max-width: 1200px;
 
@@ -97,9 +96,7 @@ body {
     grid-template-columns: 100%;
     grid-template-areas: "nav       "
                          "header    "
-                         "before-con"
                          "main      "
-                         "after-con "
                          "footer    ";
 }
 
@@ -107,7 +104,7 @@ nav#nav {
     grid-area: nav;
     margin: -0.5rem 0 0 0;
     padding: 1.5rem 0.5rem 1rem;
-    background: var(--module-background-colour);
+    background: var(--mdl-bg-colour-one);
 }
 nav#nav a,
 nav#nav a:visited {
@@ -119,33 +116,33 @@ nav#nav a:visited {
     padding: 1rem;
 }
 nav#nav a:hover {
-    background: var(--module-dark-background-colour);
+    background: var(--mdl-bg-colour-two);
 }
 
 header#header {
     grid-area: header;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+    background: var(--mdl-bg-colour-one);
+    padding: var(--mdl-padding);
     margin: 0;
 }
 
 div#before-con {
     grid-area: before-con;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+    background: var(--mdl-bg-colour-one);
+    padding: var(--mdl-padding);
     margin: 0;
 }
 
 div#after-con {
     grid-area: after-con;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+    background: var(--mdl-bg-colour-one);
+    padding: var(--mdl-padding);
 }
 
 footer#footer {
     grid-area: footer;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+    background: var(--mdl-bg-colour-one);
+    padding: var(--mdl-padding);
 }
 
 /* -----------------------------------------------
@@ -154,32 +151,13 @@ footer#footer {
 
 main {
     grid-area: main;
-
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 0.75rem;
-    grid-template-areas: "con_nav    "
-                         "con_article"
-                         "con_sidebar";
-    /*make these corners round and fade between dark and normal bg colour*/
-    background: var(--module-dark-background-colour);
-    padding: var(--module-padding);
 }
 
-main nav#con_nav {
-    grid-area: con_nav;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+main article {
+    background: var(--mdl-bg-colour-one);
+    padding: 0.5rem 1.75rem 2.25rem;
 }
 
-main article#con_article {
-    grid-area: con_article;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
-}
-
-main div#con_sidebar {
-    grid-area: con_sidebar;
-    background: var(--module-background-colour);
-    padding: var(--module-padding);
+main article:nth-child(odd) {
+    background: var(--mdl-bg-colour-two);
 }
