@@ -14,9 +14,9 @@ html {
     --tone-colour: #b36eee;
     --accent-colour: #FFD741;
     --accent-colour-tone: #FFE06C;
-    --grey: #EEDBFF;
-    --grey-tone: black; /*not yet used*/
-    color: var(--grey-tone);
+    --grey-light: #EEDBFF;
+    --grey-dark: black; /*not yet used*/
+    color: var(--grey-dark);
 }
 
 blockquote,
@@ -110,7 +110,7 @@ nav#nav {
 }
 nav#nav a,
 nav#nav a:visited {
-    color: var(--grey);
+    color: var(--grey-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.075em;
