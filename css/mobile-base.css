@@ -15,7 +15,7 @@ html {
     --accent-colour: #FFD741;
     --accent-colour-tone: #FFE06C;
     --grey-light: #EEDBFF;
-    --grey-dark: black; /*not yet used*/
+    --grey-dark: black; /*needs an appropriate value*/
     color: var(--grey-dark);
 }
 
