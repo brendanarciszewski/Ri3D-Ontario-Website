@@ -86,7 +86,7 @@ ul, ol {
  * ----------------------------------------------- */
 
 body {
-    background: #d7b8f1;
+    background: var(--gre);
     margin: 0 2.5vw 2.5vw 2.5vw;
     font-size: 1rem;
     max-width: 1200px;
@@ -110,7 +110,7 @@ nav#nav {
 }
 nav#nav a,
 nav#nav a:visited {
-    color: var(--grey-light);
+    color: var(--grey-dark);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.075em;
@@ -147,6 +147,6 @@ main article {
     padding: 0.5rem 1.75rem 2.25rem;
 }
 
-main article:nth-child(odd) {
+main article:nth-child(even) {
     background: var(--tone-colour);
 }
