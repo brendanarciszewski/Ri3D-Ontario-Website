@@ -10,11 +10,12 @@
 html {
     font: 18px 'Source Sans Pro', sans-serif;
     --mdl-padding: 0.75rem;
-    --mdl-bg-colour-one: #c076ff;
-    --mdl-bg-colour-two: #b36eee;
-    --link-colour: #f0ddab;
-    --link-visited-colour: #d7b8f1;
-    --menu-font-colour: #111;
+    --main-colour: #c076ff;
+    --tone-colour: #b36eee;
+    --accent-colour: #FFD741;
+    --accent-colour-tone: #FFE06C;
+    --grey: #111;
+    --grey-tone: black; /*not yet used*/
 }
 
 blockquote,
@@ -63,12 +64,12 @@ ul, ol {
 }
 
 a {
-    color: var(--link-colour);
+    color: var(--accent-colour);
     text-decoration: underline;
 }
 
 a:visited {
-    color: var(--link-visited-colour);
+    color: var(--accent-colour-tone);
 }
 
 a:hover {
@@ -104,11 +105,11 @@ nav#nav {
     grid-area: nav;
     margin: -0.5rem 0 0 0;
     padding: 1.5rem 0.5rem 1rem;
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
 }
 nav#nav a,
 nav#nav a:visited {
-    color: var(--menu-font-colour);
+    color: var(--grey);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.075em;
@@ -116,32 +117,32 @@ nav#nav a:visited {
     padding: 1rem;
 }
 nav#nav a:hover {
-    background: var(--mdl-bg-colour-two);
+    background: var(--tone-colour);
 }
 
 header#header {
     grid-area: header;
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
     padding: var(--mdl-padding);
     margin: 0;
 }
 
 div#before-con {
     grid-area: before-con;
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
     padding: var(--mdl-padding);
     margin: 0;
 }
 
 div#after-con {
     grid-area: after-con;
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
     padding: var(--mdl-padding);
 }
 
 footer#footer {
     grid-area: footer;
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
     padding: var(--mdl-padding);
 }
 
@@ -154,10 +155,10 @@ main {
 }
 
 main article {
-    background: var(--mdl-bg-colour-one);
+    background: var(--main-colour);
     padding: 0.5rem 1.75rem 2.25rem;
 }
 
 main article:nth-child(odd) {
-    background: var(--mdl-bg-colour-two);
+    background: var(--tone-colour);
 }
