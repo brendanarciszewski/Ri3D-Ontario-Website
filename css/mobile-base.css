@@ -6,7 +6,7 @@
 /* -----------------------------------------------
  * General + Class Stuff
  * ----------------------------------------------- */
-
+/*todo: fade container edges to background colour
 html {
     font: 18px 'Source Sans Pro', sans-serif;
     --mdl-padding: 0.75rem;
