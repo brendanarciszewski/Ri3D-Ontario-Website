@@ -16,6 +16,7 @@ html {
     --accent-colour-tone: #FFE06C;
     --grey: #EEDBFF;
     --grey-tone: black; /*not yet used*/
+    color: var(--grey-tone);
 }
 
 blockquote,
@@ -26,6 +27,19 @@ figure {
 p {
     margin:0;
     padding:0.05em 0 .15em;
+}
+
+a {
+    color: var(--accent-colour);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--accent-colour-tone);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 h1 {font-size: 1.75rem;}
@@ -61,19 +75,6 @@ h3 {
 ul, ol {
     margin: 0;
     padding: 0 0 0 1em;
-}
-
-a {
-    color: var(--accent-colour);
-    text-decoration: underline;
-}
-
-a:visited {
-    color: var(--accent-colour-tone);
-}
-
-a:hover {
-    text-decoration: none;
 }
 
 .block {
@@ -125,19 +126,6 @@ header#header {
     background: var(--main-colour);
     padding: var(--mdl-padding);
     margin: 0;
-}
-
-div#before-con {
-    grid-area: before-con;
-    background: var(--main-colour);
-    padding: var(--mdl-padding);
-    margin: 0;
-}
-
-div#after-con {
-    grid-area: after-con;
-    background: var(--main-colour);
-    padding: var(--mdl-padding);
 }
 
 footer#footer {
