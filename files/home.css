@@ -61,7 +61,7 @@
 }
 
 .header-img {
-	background-image: url(headera.jpg);
+	background-image: url(header-small.jpg);
 	background-size: cover;
   	-webkit-filter: blur(5px) brightness(70%);
     filter: blur(5px) brightness(70%);
@@ -608,7 +608,7 @@
 	width: 104%;
 	margin-left: -2%;
 	margin-top: -5px;
-	background-image: url(sponsors.jpg);
+	background-image: url(sponsors-small.jpg);
 	background-size: 110% auto;
 	height: 500px;
 	background-position: 0 -120px;
