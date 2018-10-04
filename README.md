@@ -1,4 +1,2 @@
 # Ri3D Ontario
-Welcome the website files of Ri3D Ontario.
-
-Feel free to create an `issue` if you find any.
+Please see the current site at http://www.ri3dontario.ca. This site was deprecated when we got access to a better back-end.
